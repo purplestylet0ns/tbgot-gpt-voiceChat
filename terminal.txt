@@ -1,0 +1,35 @@
+This is a Node.js program for a chatbot that interacts with users using Telegram. 
+
+
+The code handles two types of messages: "voice" and "text" messages. 
+
+
+When a "voice" message is received, the bot gets the audio file link from the message object. It then converts the audio file to a .ogg format, and then further converts the .ogg file to an .mp3 file. The bot then uses OpenAI to transcribe the audio file and saves this transcription as text. The bot stores the transcribed text in the session messages and sends the message to OpenAI to generate a response. The response is also saved in the session messages and sent back to the user.
+
+
+Це програма Node.js для чат-бота, який взаємодіє з користувачами за допомогою Telegram.
+
+
+Код обробляє два типи повідомлень: «голосові» та «текстові».
+
+
+При отриманні «голосового» повідомлення бот отримує посилання на аудіофайл з об’єкта повідомлення. Потім він перетворює аудіофайл у формат .ogg, а потім далі перетворює файл .ogg у файл .mp3. Потім бот використовує OpenAI для транскрипції аудіофайлу та зберігає цю транскрипцію як текст. Бот зберігає транскрибований текст у повідомленнях сеансу та надсилає повідомлення до OpenAI для створення відповіді. Відповідь також зберігається в повідомленнях сеансу та надсилається назад користувачеві.
+
+
+
+npm init -y (генеруємо package.json без базових налаштуваннь)
+
+
+npm i telegraf config (telegraf потрібен для спілкування з ботом а config для роботи з системними пермінними)
+
+npm i -D nodemon cross-env
+nodemon  (запуск програми в режимі розробки для перезапуску сервера)
+
+6274862966:AAFeiZOfKha7f0T2MuswgZHAnSzOYZOv5LU
+
+
+
+
+розібрати з документацією OpenAI speech to text 
+як підключати бота OpenAI в node.js
+Що таке документація OpenAI speech to text
